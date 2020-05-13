@@ -6,7 +6,7 @@ Your task is to **create a logo and a promotional website** that represent the n
 
 ## Requirements
 
-The requirements for **Rainbow Seven Siege’s website** are described as follow:
+The requirements for **Rainbow Seven Siege’s website** are described as follow :
 
 - [ ] Create new logo for Rainbow Seven Siege using **Adobe Photoshop**.
 - [ ] Design the blueprint of the game's homepage first (header, navigation, content, and footer) before starting the development of the HTML files using **Adobe Photoshop**.
@@ -21,6 +21,11 @@ The requirements for **Rainbow Seven Siege’s website** are described as follow
    - [ ] Maps
    - [ ] Pre-order
 - [ ] Create a navigation menu using **Drop down menu using CSS**.
+
+## TIPS
+
+- Untuk centang setelah selesai mengerjakan task, ubah kotakan kosong '[ ]' menjadi '[x]', lalu commit README.md di GitHub atau dari locale kamu dengan comment "Udah dicentang (bagian yg selesai)".
+- Disini juga disediakan [REQUIREMENTS.md](REQUIREMENTS.md) untuk informasi requirement project atau alternatifnya, cek dokumentasi project dalam bentuk (.docx) jika malas buka file REQUIREMENTS.md (berformatkan markdown, isinya text kosong tapi dirender di website).
 
 ## Team members
 
