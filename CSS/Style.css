@@ -7,18 +7,122 @@ $black-dark = #1e1e1e;
 
 $blue = #2b75b8;
 $white = #f9f9f9;
+$red = #f30307;
+
+Font Size:
+1 rem = 16px
+
+$navbar-item = 14px
 */
+
+/* Styling Yang kepake di navbar */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
 
 html {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #1e1e1e;
 }
+
+.header {
+    padding: 0rem 1rem;
+    background-color: #262626;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 2.5rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.dropdown {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-toggler {
+    display: none;
+}
+
+.dropdown-list{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+}
+
+.menu-item, .dropdown-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 1rem 1rem;
+    transition: all 0.2s;
+}
+
+.dropdown-list-item {
+    background-color: #262626;
+    box-shadow: 0.25rem 0.25rem 0.6rem #2626261e;
+}
+
+.dropdown-list-item:last-child {
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.menu-item:last-child {
+    padding-right: 0;
+}
+
+.menu-item:not(:last-child):hover ,.dropdown-list-item:hover {
+    background-color: #2b75b8;
+    transition: all 0.2s;
+}
+
+.dropdown-toggler:checked + .dropdown-list {
+    display: block;
+}
+
+.badge {
+    display: inline-block;
+    text-align: center;
+    padding: 0.2rem;
+    background-color: #f30307;
+    vertical-align: middle;
+    margin-left: 0.3rem;
+}
+
+.button {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+.button, .badge {
+    border-radius: 0.4rem;
+}
+
+.button-primary {
+    background-color: #2b75b8;
+}
+/* Styling Yang kepake di navbar */
