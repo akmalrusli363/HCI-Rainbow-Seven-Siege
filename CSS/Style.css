@@ -1,0 +1,24 @@
+@import "Font-style.css";
+
+/* 
+Color:
+$black-light = #262626;
+$black-dark = #1e1e1e;
+
+$blue = #2b75b8;
+$white = #f9f9f9;
+*/
+
+html {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e1e1e;
+}
