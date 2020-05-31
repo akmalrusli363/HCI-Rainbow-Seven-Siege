@@ -1,4 +1,5 @@
 @import "Font-style.css";
+@import "Utils.css";
 
 /* 
 Color:
@@ -32,9 +33,15 @@ body {
     background-color: #1e1e1e;
 }
 
+.text-subheading {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .header {
     padding: 0rem 1rem;
     background-color: #262626;
+    margin-bottom: 3rem;
 }
 
 .navbar {
@@ -53,7 +60,6 @@ body {
 
 .dropdown {
     display: block;
-    cursor: pointer;
     position: relative;
 }
 
@@ -67,7 +73,7 @@ body {
     position: absolute;
     left: 0;
     top: 100%;
-    z-index: 10;
+    z-index: 1010;
 }
 
 .menu-item, .dropdown-list-item {
@@ -126,3 +132,87 @@ body {
     background-color: #2b75b8;
 }
 /* Styling Yang kepake di navbar */
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.operator-card-list{
+    width: 90%;
+    margin: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.operator-card {
+    width: 12rem;
+    display: inline-block;
+    margin-right: 1.5rem;
+    background-color: #262626;
+}
+
+.operator-card-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.operator-card-icon {
+    width: 3rem;
+    position: absolute;
+    z-index: 10;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.operator-card-thumbnail {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.operator-card-footer {
+    padding: 0.5rem;
+    padding-top: 10rem;
+    background: linear-gradient(to top, #000000, #00000000);
+
+    text-transform: capitalize;
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-slider-button {
+    width: 1.3rem;
+}
+
+.operator-card:hover .operator-card-thumbnail, .operator-card:hover .operator-card-footer,
+.operator-card-thumbnail, .operator-card-footer {
+    transition: ease-out .2s;
+}
+
+.operator-card:hover .operator-card-thumbnail {
+    -moz-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+.operator-card:hover .operator-card-footer {
+    color: #2b75b8;
+    text-shadow: 0.2rem 0.2rem 0.5rem #2b74b84d, 0.1rem 0.1rem 0.3rem #f9f9f93b;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card-slider-button, .operator-card, .dropdown {
+    cursor: pointer;
+}
