@@ -55,14 +55,14 @@ main {
     height: 2.5rem;
 }
 
-.hamburg {
+/* .hamburg {
     display: none;
 }
 
 .hamburg-menu {
     align-self: flex-start;
     position: relative;
-}
+} */
 
 .menu {
     display: flex;
