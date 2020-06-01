@@ -2,31 +2,6 @@
 @import "Utils.css";
 @import "Variables.css";
 
-/*
-Color:
-$black-light = #262626;
-$black-dark = #1e1e1e;
-
-$blue = #2b75b8;
-$white = #f9f9f9;
-$red = #f30307;
-
-Font Size:
-1 rem = 16px
-
-$navbar-item = 14px
-*/
-
-:root {
-    --black-light: #262626;
-    --black-dark: #1e1e1e;
-
-    --blue: #2b75b8;
-    --white: #f9f9f9;
-    --red: #f30307;
-}
-
-/* Styling Yang kepake di navbar */
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -57,6 +32,13 @@ main {
     font-weight: 700;
 }
 
+.text-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
 .header {
     padding: 0rem 1rem;
     background-color: var(--black-light);
@@ -71,6 +53,15 @@ main {
 
 .logo {
     height: 2.5rem;
+}
+
+.hamburg {
+    display: none;
+}
+
+.hamburg-menu {
+    align-self: flex-start;
+    position: relative;
 }
 
 .menu {
@@ -160,7 +151,6 @@ main {
 .button-primary {
     background-color: var(--blue);
 }
-/* Styling Yang kepake di navbar */
 
 .container {
     width: 90%;
@@ -180,6 +170,51 @@ main {
     display: inline-block;
     margin-right: 1.5rem;
     background-color: #262626;
+}
+
+.operator-card-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.operator-card-icon {
+    width: 3rem;
+    position: absolute;
+    z-index: 10;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container, .container-fluid {
+    margin-bottom: 3rem;
+}
+
+.operator-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.operator-card {
+    width: 12rem;
+    display: inline-block;
+    background-color: #262626;
+}
+
+.operator-card:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.operator-card-slider {
+    width: 90%;
+    margin: auto;
+    white-space: nowrap;
+    overflow-x: hidden;
 }
 
 .operator-card-content {
@@ -215,13 +250,7 @@ main {
     left: 0;
 }
 
-.card-slider {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card-slider-button {
+.operator-card-slider-button {
     width: 1.3rem;
 }
 
@@ -242,11 +271,24 @@ main {
     font-size: 1.5rem;
 }
 
-.card-slider-button, .operator-card, .dropdown {
+.operator-card-slider-button, .operator-card, .dropdown {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 799px) {
+
+    /* .hamburg-menu {
+        height: 4rem;
+        width: 100vw;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    } */
+
     .page-menu {
         display: block;
         width: 100%;
@@ -264,6 +306,61 @@ main {
         display: block;
         position: relative;
     }
+
+    .operator-card {
+        width: 9rem;
+    }
+
+    .operator-card:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .operator-card:hover .operator-card-footer {
+        font-size: 1.3rem;
+    }
+
+    .operator-card-icon {
+        width: 2.5rem;
+    }
+
+    .operator-card-slider-button {
+        width: .8rem;
+    }
 }
 
-/* Styling Yang kepake di navbar */
+@media only screen and (max-width: 576px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .slide {
+        font-size: 0;
+    }
+
+    .operator-card {
+        width: 50%;
+    }
+
+    .operator-card, .operator-card:not(:last-child) {
+        margin-right: 50%;
+        transform: translateX(50%);
+    }
+
+    .operator-card-footer {
+        font-size: 1rem;
+    }
+
+    .operator-card:hover .operator-card-footer {
+        font-size: 1.5rem;
+    }
+
+    .operator-card-icon {
+        width: 3rem;
+    }
+
+    .operator-card-slider-button {
+        width: .8rem;
+    }
+}
+

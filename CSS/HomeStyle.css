@@ -58,8 +58,6 @@ nav ul li a {
     position: absolute;
     background-color: #262626;
     border-radius: 0 0 4px 4px;
-    /* min-width: 100px; */
-    /* padding: 0 8px; */
 }
 
 .dropDown a {
@@ -419,11 +417,9 @@ label {
     background: #555;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
     label {
         display: block;
-        /* cursor: pointer; */
-        /* line-height: 60px; */
     }
 
     .Login {
