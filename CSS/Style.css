@@ -33,9 +33,11 @@ body {
     background-color: #1e1e1e;
 }
 
-.text-subheading {
+.text-heading {
     font-size: 1.5rem;
     font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .header {
@@ -136,6 +138,9 @@ body {
 .container {
     width: 90%;
     margin: auto;
+}
+
+.container, .container-fluid {
     margin-bottom: 3rem;
 }
 
@@ -160,13 +165,7 @@ body {
     margin: auto;
     white-space: nowrap;
     overflow-x: hidden;
-
-    /* scrollbar-width: 0; */
 }
-
-/* .operator-card-slider::-webkit-scrollbar {
-    width: 0 !important;
-} */
 
 .operator-card-content {
     position: relative;
@@ -225,3 +224,62 @@ body {
 .operator-card-slider-button, .operator-card, .dropdown {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 799px) {
+    .operator-card {
+        width: 9rem;
+    }
+
+    .operator-card:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .operator-card:hover .operator-card-footer {
+        font-size: 1.3rem;
+    }
+
+    .operator-card-icon {
+        width: 2.5rem;
+    }
+
+    .operator-card-slider-button {
+        width: .8rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .slide {
+        font-size: 0;
+    }
+
+    .operator-card {
+        width: 50%;
+    }
+
+    .operator-card, .operator-card:not(:last-child) {
+        margin-right: 50%;
+        transform: translateX(50%);
+    }
+
+    .operator-card-footer {
+        font-size: 1rem;
+    }
+
+    .operator-card:hover .operator-card-footer {
+        font-size: 1.5rem;
+    }
+
+    .operator-card-icon {
+        width: 3rem;
+    }
+
+    .operator-card-slider-button {
+        width: .8rem;
+    }
+}
+
