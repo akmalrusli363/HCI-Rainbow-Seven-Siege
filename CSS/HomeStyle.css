@@ -1,52 +1,43 @@
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/open-sans-v17-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Open Sans Regular'), local('OpenSans-Regular'),
-         url('../fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/open-sans-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/open-sans-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
-}
+@import "Font-style.css";
+@import "Variables.css";
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
 }
 
-body{
+body {
     background-color: #1e1e1e;
     position: relative;
 }
 
-li{
+li {
     list-style: none;
 }
 
-nav{
+nav {
     position: sticky;
-    top:0;
+    top: 0;
     background-color: #262626;
     width: 100%;
     height: 60px;
     z-index: 1;
 }
 
-nav img{
+nav img {
     float: left;
     height: 40px;
     margin-top: 7px;
     margin-left: 20px;
     margin-right: 10px;
 }
-.navbar-item{
+
+.navbar-item {
     float: right;
 }
 
-.menu-Title{
+.menu-Title {
     position: relative;
     display: inline-block;
     line-height: 59px;
@@ -55,14 +46,14 @@ nav img{
     background: #262626;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     text-transform: none;
     text-decoration: none;
     display: block;
 }
 
-.dropDown{
+.dropDown {
     display: none;
     position: absolute;
     background-color: #262626;
@@ -71,31 +62,32 @@ nav ul li a{
     /* padding: 0 8px; */
 }
 
-.dropDown a{
+.dropDown a {
     color: white;
     display: block;
 }
-.menu-Title:hover .dropDown{
+
+.menu-Title:hover .dropDown {
     position: absolute;
     min-width: 130px;
     display: block;
 }
 
-nav ul li ul li{
+nav ul li ul li {
     border: 4px;
 }
 
-.navbar-item .Quarantine:hover{
+.navbar-item .Quarantine:hover {
 
-    background-color:#1971c2;
-    transition: all .1s;    
+    background-color: #1971c2;
+    transition: all .1s;
 }
 
-.quaContent{
+.quaContent {
     display: inline-flex;
 }
 
-.quaContent div span{
+.quaContent div span {
     margin-left: 6px;
     background-color: red;
     height: 40px;
@@ -106,22 +98,22 @@ nav ul li ul li{
     border-radius: 6px;
 }
 
-.Quarantine{
+.Quarantine {
     text-align: center;
     width: 140px;
 }
 
-.navbar-item li:hover{
+.navbar-item li:hover {
     color: white;
-    background-color:#1971c2;
+    background-color: #1971c2;
     transition: all .5s;
 }
 
-nav .RightBtn{
+nav .RightBtn {
     float: right;
 }
 
-.Login{
+.Login {
     padding-left: 18px;
     padding-right: 18px;
     padding-top: 5px;
@@ -133,7 +125,7 @@ nav .RightBtn{
     transform: translateY(40%);
 }
 
-.Login a{
+.Login a {
     font-weight: 500;
     font-size: 12px;
     color: white;
@@ -141,7 +133,7 @@ nav .RightBtn{
     text-decoration: none;
 }
 
-.DiscoverContent{
+.DiscoverContent {
     display: flex;
     background-color: yellow;
     height: 400px;
@@ -151,7 +143,7 @@ nav .RightBtn{
     position: relative;
 }
 
-.DiscoverBox{
+.DiscoverBox {
     margin-top: 50px;
     align-items: center;
     /* background-color: orange; */
@@ -161,26 +153,26 @@ nav .RightBtn{
     margin-right: auto;
 }
 
-.DiscoverBox .TitleD p{
+.DiscoverBox .TitleD p {
     color: white;
     font-weight: 500;
     padding-bottom: 10px;
 }
 
-.sliderImages{
+.sliderImages {
     width: 63%;
     height: inherit;
-    background: brown;   
+    background: brown;
 }
 
-.sliderContent{
+.sliderContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* background-color: pink; */
 }
 
-.sliderMain{
+.sliderMain {
     justify-content: space-between;
     align-items: center;
     width: 37%;
@@ -188,7 +180,7 @@ nav .RightBtn{
     background-color: #262626;
 }
 
-.sliderMain #sliderMore{
+.sliderMain #sliderMore {
     margin-left: 37px;
     margin-bottom: 10px;
     text-decoration: none;
@@ -197,14 +189,14 @@ nav .RightBtn{
     font-weight: bold;
 }
 
-.sliderMainContent{
+.sliderMainContent {
     /* background-color: red; */
     width: 300px;
     height: 280px;
     margin: 35px 0 10px 0;
 }
 
-.sliderMainContent p{
+.sliderMainContent p {
     margin-top: 10px;
     text-align: justify;
     font-size: 14px;
@@ -213,38 +205,39 @@ nav .RightBtn{
     /* background-color: violet; */
 }
 
-.sliderMainContent h3{
+.sliderMainContent h3 {
     color: #5d5b5b;
     /* background-color: teal; */
 }
 
-.sliderMainContent h2, .sliderMainContent p{
+.sliderMainContent h2,
+.sliderMainContent p {
     color: white;
     /* background-color: tomato; */
 }
 
-.slide{
+.slide {
     position: absolute;
     width: inherit;
     height: 100%;
 }
 
-.slide img{
+.slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.pager{
+.pager {
     position: relative;
     top: 10px;
     /* background: powderblue; */
     font-size: 17px;
-	font-weight: 750;
-	color: white;
+    font-weight: 750;
+    color: white;
 }
 
-.arrows{
+.arrows {
     text-decoration: none;
     margin: 50px 2% 0 2%;
     font-size: 40px;
@@ -252,12 +245,12 @@ nav .RightBtn{
     color: rgba(255, 255, 255, 0.65);
 }
 
-.sliderContent .arrows:hover{
+.sliderContent .arrows:hover {
     color: orange;
     transition: .5s;
 }
 
-.Updates{
+.Updates {
     width: 70%;
     height: auto;
     display: flex;
@@ -267,20 +260,22 @@ nav .RightBtn{
     margin: 70px auto;
 }
 
-.Updates .Box1, .Updates .Box2{
+.Updates .Box1,
+.Updates .Box2 {
     width: 440px;
     height: 450px;
-    background:#262626;
+    background: #262626;
     margin: 10px 0 20px 0;
     overflow-y: scroll;
 }
 
-.TitleUpdate p{
+.TitleUpdate p {
     color: white;
     font-weight: 500;
 }
 
-.BoxUpdates, .BoxUpdatesLast{
+.BoxUpdates,
+.BoxUpdatesLast {
     height: 120px;
     width: 400px;
     margin-top: 5px;
@@ -290,14 +285,14 @@ nav .RightBtn{
     border-bottom: 2px solid white;
 }
 
-.img-BoxUpdates{
+.img-BoxUpdates {
     float: left;
     width: 180px;
     height: 120px;
     /* background-color: violet; */
 }
 
-img.images{
+img.images {
     margin-top: 10px;
     width: 180px;
     height: 100px;
@@ -305,15 +300,16 @@ img.images{
     /* background: salmon; */
 }
 
-.BoxText h5{
+.BoxText h5 {
     color: #5d5b5b;
 }
 
-.BoxText h3{
+.BoxText h3 {
     color: white;
 }
 
-.BoxUpdates p, .BoxUpdatesLast p{
+.BoxUpdates p,
+.BoxUpdatesLast p {
     /* margin: 10px; */
     color: white;
     overflow-y: scroll;
@@ -323,7 +319,7 @@ img.images{
 }
 
 
-.BoxText{
+.BoxText {
     float: left;
     /* margin-bottom: 2px; */
     width: 200px;
@@ -332,12 +328,13 @@ img.images{
     margin-right: 5px;
     /* background: darkmagenta; */
 }
-.BoxUpdatesLast{
+
+.BoxUpdatesLast {
     margin-bottom: 10px;
     border: none;
 }
 
-.btnSection{
+.btnSection {
     width: 120px;
     height: 50px;
     margin-left: auto;
@@ -346,7 +343,7 @@ img.images{
     text-align: center;
 }
 
-.btnViewMore{
+.btnViewMore {
     color: white;
     text-decoration: none;
     line-height: 50px;
@@ -356,27 +353,31 @@ img.images{
     font-weight: 600;
 }
 
-.BoxUpdates p::-webkit-scrollbar, .BoxUpdatesLast p::-webkit-scrollbar, .sliderMainContent p::-webkit-scrollbar {
+.BoxUpdates p::-webkit-scrollbar,
+.BoxUpdatesLast p::-webkit-scrollbar,
+.sliderMainContent p::-webkit-scrollbar {
     display: none;
 }
 
-.BoxUpdatesLast p, .BoxUpdates p, .sliderMainContent p{
+.BoxUpdatesLast p,
+.BoxUpdates p,
+.sliderMainContent p {
     scrollbar-width: none;
 }
 
-footer{
+footer {
     height: 60px;
     background-color: #262626;
     text-align: center;
 }
 
-.footerDesc p{
+.footerDesc p {
     color: white;
     font-weight: 700;
     padding-top: 5px;
 }
 
-.footerContent img{
+.footerContent img {
     margin-top: 5px;
     height: 20px;
     width: 20px;
@@ -384,50 +385,52 @@ footer{
     margin-right: 5px;
 }
 
-#toggle{
+#toggle {
     display: none;
 }
 
-label{
+label {
     margin-right: 50px;
     float: right;
     font-size: 26px;
-    line-height:60px;
+    line-height: 60px;
     display: none;
     width: 26px;
     cursor: pointer;
 }
 
-.Box1, .Box2{
+.Box1,
+.Box2 {
     scrollbar-color: #888 #262626;
-    scrollbar-width: thin;  
+    scrollbar-width: thin;
 }
 
-.Box1::-webkit-scrollbar, .Box2::-webkit-scrollbar {
+.Box1::-webkit-scrollbar,
+.Box2::-webkit-scrollbar {
     width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
-@media screen and (max-width: 800px){
-    label{
+@media screen and (max-width: 800px) {
+    label {
         display: block;
         /* cursor: pointer; */
         /* line-height: 60px; */
     }
 
-    .Login{
+    .Login {
         display: none;
     }
 
-    .navbar-item{
+    .navbar-item {
         /* display: none; */
         position: absolute;
         width: 100%;
@@ -436,30 +439,33 @@ label{
         text-align: center;
     }
 
-    .navbar-item li{
+    .navbar-item li {
         /* float: none; */
         width: 100%;
     }
 
-    .menu-Title{
+    .menu-Title {
         width: auto;
         padding: 0;
     }
-    .Box{
+
+    .Box {
         width: 120%;
     }
-    
-    .UpdatesContent{
+
+    .UpdatesContent {
         height: 200px;
     }
 
-    .toggleMenu:checked + nav .navbar-item{
+    .toggleMenu:checked+nav .navbar-item {
         display: none;
     }
 }
 
-@media screen and (max-width: 500px){
-    .Updates .Box1, .Updates .Box2{
+@media screen and (max-width: 500px) {
+
+    .Updates .Box1,
+    .Updates .Box2 {
         height: 300px;
         width: 350px;
     }
