@@ -22,7 +22,6 @@ if($(document).ready()) {
         } else if(direction == "right") {
             newScrollPos = currScrollPos + sliderWidth;
         }
-        console.log(newScrollPos);
         return newScrollPos;
     }
     
