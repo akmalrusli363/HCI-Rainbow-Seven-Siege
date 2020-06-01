@@ -1,0 +1,466 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+body{
+    background-color: #1e1e1e;
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    position: sticky;
+    top:0;
+    background-color: #262626;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+
+nav img{
+    float: left;
+    height: 40px;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.navbar-item{
+    float: right;
+}
+
+.menu-Title{
+    position: relative;
+    display: inline-block;
+    line-height: 59px;
+    text-align: center;
+    padding: 0 8px;
+    background: #262626;
+}
+
+nav ul li a{
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDown{
+    display: none;
+    position: absolute;
+    background-color: #262626;
+    border-radius: 0 0 4px 4px;
+    /* min-width: 100px; */
+    /* padding: 0 8px; */
+}
+
+.dropDown a{
+    color: white;
+    display: block;
+}
+.menu-Title:hover .dropDown{
+    position: absolute;
+    min-width: 130px;
+    display: block;
+}
+
+nav ul li ul li{
+    border: 4px;
+}
+
+.navbar-item .Quarantine:hover{
+
+    background-color:#1971c2;
+    transition: all .1s;    
+}
+
+.quaContent{
+    display: inline-flex;
+}
+
+.quaContent div span{
+    margin-left: 6px;
+    background-color: red;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.Quarantine{
+    text-align: center;
+    width: 140px;
+}
+
+.navbar-item li:hover{
+    color: white;
+    background-color:#1971c2;
+    transition: all .5s;
+}
+
+nav .RightBtn{
+    float: right;
+}
+
+.Login{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1971c2;
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-left: 20px;
+    transform: translateY(40%);
+}
+
+.Login a{
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.DiscoverContent{
+    display: flex;
+    background-color: yellow;
+    height: 400px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.DiscoverBox{
+    margin-top: 50px;
+    align-items: center;
+    /* background-color: orange; */
+    height: 40%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DiscoverBox .TitleD p{
+    color: white;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.sliderImages{
+    width: 63%;
+    height: inherit;
+    background: brown;   
+}
+
+.sliderContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: pink; */
+}
+
+.sliderMain{
+    justify-content: space-between;
+    align-items: center;
+    width: 37%;
+    height: inherit;
+    background-color: #262626;
+}
+
+.sliderMain #sliderMore{
+    margin-left: 37px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    /* background-color: #1971c2; */
+    font-weight: bold;
+}
+
+.sliderMainContent{
+    /* background-color: red; */
+    width: 300px;
+    height: 280px;
+    margin: 35px 0 10px 0;
+}
+
+.sliderMainContent p{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+    height: 210px;
+    overflow-y: scroll;
+    /* background-color: violet; */
+}
+
+.sliderMainContent h3{
+    color: #5d5b5b;
+    /* background-color: teal; */
+}
+
+.sliderMainContent h2, .sliderMainContent p{
+    color: white;
+    /* background-color: tomato; */
+}
+
+.slide{
+    position: absolute;
+    width: inherit;
+    height: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pager{
+    position: relative;
+    top: 10px;
+    /* background: powderblue; */
+    font-size: 17px;
+	font-weight: 750;
+	color: white;
+}
+
+.arrows{
+    text-decoration: none;
+    margin: 50px 2% 0 2%;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.sliderContent .arrows:hover{
+    color: orange;
+    transition: .5s;
+}
+
+.Updates{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    margin: 70px auto;
+}
+
+.Updates .Box1, .Updates .Box2{
+    width: 440px;
+    height: 450px;
+    background:#262626;
+    margin: 10px 0 20px 0;
+    overflow-y: scroll;
+}
+
+.TitleUpdate p{
+    color: white;
+    font-weight: 500;
+}
+
+.BoxUpdates, .BoxUpdatesLast{
+    height: 120px;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+    border-bottom: 2px solid white;
+}
+
+.img-BoxUpdates{
+    float: left;
+    width: 180px;
+    height: 120px;
+    /* background-color: violet; */
+}
+
+img.images{
+    margin-top: 10px;
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+    /* background: salmon; */
+}
+
+.BoxText h5{
+    color: #5d5b5b;
+}
+
+.BoxText h3{
+    color: white;
+}
+
+.BoxUpdates p, .BoxUpdatesLast p{
+    /* margin: 10px; */
+    color: white;
+    overflow-y: scroll;
+    height: 60px;
+    font-size: 10px;
+    text-align: justify;
+}
+
+
+.BoxText{
+    float: left;
+    /* margin-bottom: 2px; */
+    width: 200px;
+    padding-top: 9px;
+    margin-left: 10px;
+    margin-right: 5px;
+    /* background: darkmagenta; */
+}
+.BoxUpdatesLast{
+    margin-bottom: 10px;
+    border: none;
+}
+
+.btnSection{
+    width: 120px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btnViewMore{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    background-color: #1971c2;
+    padding: 10px 18px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.BoxUpdates p::-webkit-scrollbar, .BoxUpdatesLast p::-webkit-scrollbar, .sliderMainContent p::-webkit-scrollbar {
+    display: none;
+}
+
+.BoxUpdatesLast p, .BoxUpdates p, .sliderMainContent p{
+    scrollbar-width: none;
+}
+
+footer{
+    height: 60px;
+    background-color: #262626;
+    text-align: center;
+}
+
+.footerDesc p{
+    color: white;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.footerContent img{
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#toggle{
+    display: none;
+}
+
+label{
+    margin-right: 50px;
+    float: right;
+    font-size: 26px;
+    line-height:60px;
+    display: none;
+    width: 26px;
+    cursor: pointer;
+}
+
+.Box1, .Box2{
+    scrollbar-color: #888 #262626;
+    scrollbar-width: thin;  
+}
+
+.Box1::-webkit-scrollbar, .Box2::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@media screen and (max-width: 800px){
+    label{
+        display: block;
+        /* cursor: pointer; */
+        /* line-height: 60px; */
+    }
+
+    .Login{
+        display: none;
+    }
+
+    .navbar-item{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 60px;
+        text-align: center;
+    }
+
+    .navbar-item li{
+        /* float: none; */
+        width: 100%;
+    }
+
+    .menu-Title{
+        width: auto;
+        padding: 0;
+    }
+    .Box{
+        width: 120%;
+    }
+    
+    .UpdatesContent{
+        height: 200px;
+    }
+
+    .toggleMenu:checked + nav .navbar-item{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Updates .Box1, .Updates .Box2{
+        height: 300px;
+        width: 350px;
+    }
+}
