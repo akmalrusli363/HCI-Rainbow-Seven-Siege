@@ -139,19 +139,34 @@ body {
     margin-bottom: 3rem;
 }
 
-.operator-card-list{
-    width: 90%;
-    margin: auto;
-    overflow-x: scroll;
-    white-space: nowrap;
+.operator-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .operator-card {
     width: 12rem;
     display: inline-block;
-    margin-right: 1.5rem;
     background-color: #262626;
 }
+
+.operator-card:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.operator-card-slider {
+    width: 90%;
+    margin: auto;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    /* scrollbar-width: 0; */
+}
+
+/* .operator-card-slider::-webkit-scrollbar {
+    width: 0 !important;
+} */
 
 .operator-card-content {
     position: relative;
@@ -186,13 +201,7 @@ body {
     left: 0;
 }
 
-.card-slider {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card-slider-button {
+.operator-card-slider-button {
     width: 1.3rem;
 }
 
@@ -213,6 +222,6 @@ body {
     font-size: 1.5rem;
 }
 
-.card-slider-button, .operator-card, .dropdown {
+.operator-card-slider-button, .operator-card, .dropdown {
     cursor: pointer;
 }
