@@ -17,3 +17,7 @@
 .util-py-3rem {
     padding: 3rem 0;
 }
+
+.util-fullscreen-height {
+    height: 100vh;
+}

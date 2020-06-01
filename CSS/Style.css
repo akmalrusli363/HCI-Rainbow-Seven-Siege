@@ -16,6 +16,7 @@ html {
 
 body {
     background-color: var(--black-dark);
+    position: relative;
 }
 
 main {
@@ -180,7 +181,7 @@ main {
 .operator-card-icon {
     width: 3rem;
     position: absolute;
-    z-index: 10;
+    z-index: 5;
     top: 0.5rem;
     left: 0.5rem;
 }

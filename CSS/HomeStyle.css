@@ -12,6 +12,8 @@ body {
     position: relative;
 }
 
+
+/* Navbar style disini */
 li {
     list-style: none;
 }
@@ -43,11 +45,12 @@ nav img {
 
 .navbar-item {
     float: right;
+    display: flex;
 }
 
 .menu-Title {
     position: relative;
-    display: inline-block;
+    display: block;
     line-height: 59px;
     text-align: center;
     padding: 0 8px;
@@ -75,7 +78,7 @@ nav ul li a {
 
 .menu-Title:hover .dropDown {
     position: absolute;
-    min-width: 130px;
+    width: 130px;
     display: block;
     z-index: 10;
 }
@@ -85,7 +88,6 @@ nav ul li ul li {
 }
 
 .navbar-item .Quarantine:hover {
-
     background-color: #1971c2;
     transition: all .1s;
 }
@@ -139,6 +141,7 @@ nav .RightBtn {
     letter-spacing: 2px;
     text-decoration: none;
 }
+/* Navbar style disini */
 
 .DiscoverContent {
     display: flex;
@@ -392,6 +395,7 @@ footer {
     margin-right: 5px;
 }
 
+/* Navbar style disini */
 #toggle {
     display: none;
 }
@@ -405,6 +409,7 @@ label {
     width: 26px;
     cursor: pointer;
 }
+/*  Navbar style disini */
 
 .Box1,
 .Box2 {
@@ -436,16 +441,11 @@ label {
     }
 
     .navbar-item {
-        /* display: none; */
+        display: none;
         position: absolute;
         width: 100%;
         top: 60px;
         text-align: center;
-    }
-
-    .navbar-item li {
-        display: none;
-        width: 100%;
     }
 
     .navbar-item > li:first-child:hover{
@@ -460,7 +460,7 @@ label {
         line-height: 1;
     }
 
-    .toggleMenu:checked + .navbar-item li {
+    .toggleMenu:checked + .navbar-item, .toggleMenu:checked + .navbar-item li {
         display: block;
     }
 
@@ -470,14 +470,11 @@ label {
         height: 100%;
     }
 
-    .dropDown-List + a {
-        background-color: red;
-    }
-
     .dropDown {
         display: inline-block;
         margin: auto;
-        width: fit-content;
+        min-width: 50px;
+        line-height: 1;
 
         transform: translateY(-10%);
         border: 2px solid #1971c2;
@@ -486,11 +483,20 @@ label {
     .dropDown > li {
         display: inline-block;
         padding: .5rem 0;
+        text-align: center;
+    }
+
+    .dropDown > li > a {
+        display: block;
+        padding: 0 2rem;
     }
 
     .menu-Title:hover .dropDown {
-        position: relative;
-        line-height: 1;
+        width: fit-content;
+    }
+
+    .menu-Title:hover .dropDown, .dropDown {
+        position: static;
     }
 
     .Box {
@@ -501,7 +507,7 @@ label {
         height: 200px;
     }
 
-    .toggleMenu:checked+nav .navbar-item {
+    .toggleMenu:checked + nav .navbar-item {
         display: none;
     }
 }

@@ -5,44 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Layout/Layout.css">
     <title>Defender Operators | Rainbow 7 Siege</title>
 </head>
 
-<body>
-    <!-- navbar -->
-    <header class="header">
-        <nav class="navbar">
-            <a href="#"><img class="logo" src="../Assets/Images/RinbowSevenLogoPutihPNG.png"
-                    alt="rainbow-seven-siege-logo"></a>
-            <div class="menu">
-                <label for="nav-dropdown-input" class="menu-item dropdown">
-                    Operators
-                    <input id="nav-dropdown-input" class="dropdown-toggler" type="checkbox">
-                    <div class="dropdown-list">
-                        <a href="#" class="dropdown-list-item">
-                            Attacker
-                        </a>
-                        <a href="#" class="dropdown-list-item">
-                            Defender
-                        </a>
-                    </div>
-                </label>
-                <a href="#" class="menu-item">
-                    Maps
-                </a>
-                <a href="#" class="menu-item">
-                    Quarantine <span class="badge">New</span>
-                </a>
-                <a href="#" class="menu-item">
-                    Pre-Order
-                </a>
-                <div class="menu-item">
-                    <a class="button button-primary" href="#">Login</a>
-                </div>
+<body class="util-fullscreen-height">
+    <nav>
+        <div class="RightBtn">
+            <div class="Login">
+                <a href="#">LOGIN</a>
             </div>
-        </nav>
-    </header>
-    <!-- navbar -->
+        </div>
+        <a href="Home.html"><img src="../Assets/RinbowSevenLogoPutihPNG.png" alt="Rainbow Seven Logo"></a>
+        <label class="toggle-label label" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" class="toggleMenu">
+        <ul class="navbar-item">
+            <li class="menu-Title">
+                <a href="#">Operators</a>
+                <div class="dropDown-List">
+                    <ul class="dropDown">
+                        <li><a href="Operator-attacker.html">Attacker</a></li>
+                        <li><a href="Operator-defender.html">Defender</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-Title">
+                <a href="Maps.html">Maps</a>
+            </li>
+            <li class="menu-Title">
+                <div class="quaContent">
+                    <a href="Quarantine.html" class="QuatTitle">Quarantine</a>
+                    <div>
+                        <span class="NEW">New</span>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-Title">
+                <a href="Pre-Order.html">Pre-Order</a>
+            </li>
+            <li class="menu-Title">
+                <div class="Login hamburg-button">
+                    <a href="#">LOGIN</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
     <main>
         <section class="container">
@@ -229,6 +236,18 @@
             </div>
         </section>
     </main>
+
+    <footer id="force-pos-bottom">
+        <div class="footerContent">
+            <div class="footerDesc">
+                <p>Find us on:</p>
+            </div>
+            <a href="https://www.facebook.com/groups/R6SCGlobal/" target="_blank"><img src="../Assets/facebook logo.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/rainbow6game_us/?hl=en" target="_blank"><img
+                    src="../Assets/instagram logo.png" alt=""></a>
+        </div>
+    </footer>
 
     <script src="../JS/jquery-3.5.1.min.js"></script>
     <script src="../JS/Script-operator.js"></script>

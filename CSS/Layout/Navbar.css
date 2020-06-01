@@ -1,0 +1,214 @@
+li {
+    list-style: none;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #262626;
+    width: 100%;
+    height: 60px;
+    z-index: 20;
+}
+
+nav img {
+    float: left;
+    height: 40px;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.hamburg-button {
+    display: none;
+}
+
+.toggle-label {
+    color: white;
+}
+
+.navbar-item {
+    float: right;
+    display: flex;
+}
+
+.menu-Title {
+    position: relative;
+    display: block;
+    line-height: 59px;
+    text-align: center;
+    padding: 0 8px;
+    background: #262626;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDown {
+    display: none;
+    position: absolute;
+    background-color: #262626;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropDown a {
+    color: white;
+    display: block;
+}
+
+.menu-Title:hover .dropDown {
+    position: absolute;
+    width: 130px;
+    display: block;
+    z-index: 10;
+}
+
+nav ul li ul li {
+    border: 4px;
+}
+
+.navbar-item .Quarantine:hover {
+    background-color: #1971c2;
+    transition: all .1s;
+}
+
+.quaContent {
+    display: inline-flex;
+}
+
+.quaContent div span {
+    margin-left: 6px;
+    background-color: red;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.Quarantine {
+    text-align: center;
+    width: 140px;
+}
+
+.navbar-item li:not(:last-child):hover, .dropDown > li:hover {
+    color: white;
+    background-color: #1971c2;
+    transition: all .5s;
+}
+
+nav .RightBtn {
+    float: right;
+}
+
+.Login {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1971c2;
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-left: 20px;
+    transform: translateY(40%);
+}
+
+.Login a {
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.label {
+    margin-right: 50px;
+    float: right;
+    font-size: 26px;
+    line-height: 60px;
+    display: none;
+    width: 26px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 799px) {
+    .label {
+        display: block;
+    }
+
+    .Login {
+        display: none;
+    }
+
+    .navbar-item {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        text-align: center;
+    }
+
+    .navbar-item > li:first-child:hover{
+        color: white;
+        background-color: #262626;
+    }
+
+    .hamburg-button {
+        display: inline-block;
+        transform: none;
+        padding: .8rem 1rem;
+        line-height: 1;
+    }
+
+    .toggleMenu:checked + .navbar-item, .toggleMenu:checked + .navbar-item li {
+        display: block;
+    }
+
+    .menu-Title {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .dropDown {
+        display: inline-block;
+        margin: auto;
+        min-width: 50px;
+        line-height: 1;
+
+        transform: translateY(-10%);
+        border: 2px solid #1971c2;
+    }
+
+    .dropDown > li {
+        display: inline-block;
+        padding: .5rem 0;
+        text-align: center;
+    }
+
+    .dropDown > li > a {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    .menu-Title:hover .dropDown {
+        width: fit-content;
+    }
+
+    .menu-Title:hover .dropDown, .dropDown {
+        position: static;
+    }
+
+    .toggleMenu:checked + nav .navbar-item {
+        display: none;
+    }
+}
