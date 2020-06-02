@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Pre-Order.css.css">
+    <link rel="stylesheet" href="../CSS/Layout/Layout.css">
+    <script type="text/javascript" src="../JS/Pre-OrderScript.js.js"></script>
+    <title>Pre-Order</title>
+</head>
+
+<body>
+    <nav>
+        <div class="RightBtn">
+            <div class="Login">
+                <a href="#">LOGIN</a>
+            </div>
+        </div>
+        <a href="Home.html"><img src="../Assets/RinbowSevenLogoPutihPNG.png" alt="Rainbow Seven Logo"></a>
+        <label class="toggle-label label" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" class="toggleMenu">
+        <ul class="navbar-item">
+            <li class="menu-Title">
+                <a href="#">Operators</a>
+                <div class="dropDown-List">
+                    <ul class="dropDown">
+                        <li><a href="Operator-attacker.html">Attacker</a></li>
+                        <li><a href="Operator-defender.html">Defender</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-Title">
+                <a href="Maps.html">Maps</a>
+            </li>
+            <li class="menu-Title">
+                <div class="quaContent">
+                    <a href="Quarantine.html" class="QuatTitle">Quarantine</a>
+                    <div>
+                        <span class="NEW">New</span>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-Title">
+                <a href="Pre-Order.html">Pre-Order</a>
+            </li>
+            <li class="menu-Title">
+                <div class="Login hamburg-button">
+                    <a href="#">LOGIN</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <main >
+        <div class="container-Form">
+            <h1>Pre-Order</h1>
+            <p>Please fill this form to pre-order Rainbow Seven Siege</p>
+            <form action="">
+                <div class="row">
+                    <div class="col-label">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="text" name="username" id="username" placeholder="example123" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="password" name="password" id="password" placeholder="must be alphanumeric" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="col-input">
+                        <textarea name="address" id="address" style="height:200px;"></textarea required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="numberOfCopies">Number of Copies</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="number" value="1" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="typeOfGame">Type of Game</label>
+                    </div>
+                    <div class="col-input">
+                        <select name="typeOfGame" id="typeOfgame">
+                            <option value="PS4">PS4</option>
+                            <option value="Xbox">Xbox</option>
+                            <option value="PC">PC</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="term">I have read and agree to the Terms and Service Conditions</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="radio">
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="submitBtn" onclick="formValidation()">Submit</button>
+                    <p id="errorMsg"></p>
+                </div>
+
+            </form>
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="footerContent">
+            <div class="footerDesc">
+                <p>Find us on:</p>
+            </div>
+            <a href="https://www.facebook.com/groups/R6SCGlobal/" target="_blank"><img src="../Assets/facebook logo.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/rainbow6game_us/?hl=en" target="_blank"><img
+                    src="../Assets/instagram logo.png" alt=""></a>
+        </div>
+    </footer>
+
+</body>
+</html>
