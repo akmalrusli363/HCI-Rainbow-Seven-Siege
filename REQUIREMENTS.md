@@ -52,9 +52,9 @@ Ubipost wants you to make a page that helps the user to pre-order the game. User
 3. Consider the **color**, **font**, **image**, **size,** and **layout** that you use to design the logo and website.
 4. All **pages mentioned in the requirement** should be created **based on your template design**.
 5. Use only **external** **CSS**. **Internal** or **inline** **CSS** will not be **marked**.
-6. Use **CSS box positioning concept** to design your web structure**, do not use table for the layout.**
+6. Use **CSS box positioning concept** to design your web structure, **do not use table for the layout.**
 7. Consider the language you use, including spelling and grammar, feel free to choose either **Bahasa** or **English**, but you cannot have both at the same time.
-8. Use **Mozilla** **Firefox 22** or above version to check design compatibility.
+8. Use **Mozilla Firefox 22** or above version to check design compatibility.
 9. Make your website **responsive** so it can deliver in any size, particularly for **desktops**, **tablets** and **mobile devices**.
 10. Organize your files with subdirectories.
 11. Include references (link from a website, book) that you use in creating the website.
