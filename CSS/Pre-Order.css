@@ -1,0 +1,6 @@
+@media screen and (max-width: 800px) {
+    .col-number, .col-input, input[type=submit],input[type=number] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
