@@ -24,20 +24,15 @@ main {
 }
 
 .text-heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .text-subheading {
     font-size: 1.5rem;
     font-weight: 700;
-}
-
-.text-heading {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: capitalize;
-    text-align: center;
 }
 
 .header {
@@ -170,7 +165,7 @@ main {
     width: 12rem;
     display: inline-block;
     margin-right: 1.5rem;
-    background-color: #262626;
+    background-color: var(--black-light);
 }
 
 .operator-card-content {
@@ -204,7 +199,7 @@ main {
 .operator-card {
     width: 12rem;
     display: inline-block;
-    background-color: #262626;
+    background-color: var(--black-light);
 }
 
 .operator-card:not(:last-child) {
