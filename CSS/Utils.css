@@ -1,3 +1,7 @@
+.util-mb-small {
+    margin-bottom: .5rem;
+}
+
 .util-mb-1rem {
     margin-bottom: 1rem;
 }
@@ -20,4 +24,29 @@
 
 .util-fullscreen-height {
     height: 100vh;
+}
+
+.util-text-center {
+    text-align: center !important;
+}
+
+.util-text-left {
+    text-align: left !important;
+}
+
+.util-text-justify {
+    text-align: justify !important;
+}
+
+.util-text-color-blue {
+    color: var(--blue);
+}
+
+.util-text-spacing-med {
+    letter-spacing: .2rem;
+}
+
+.util-clear-margin-padding {
+    margin: 0;
+    padding: 0;
 }
