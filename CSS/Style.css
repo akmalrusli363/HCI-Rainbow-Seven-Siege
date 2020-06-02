@@ -39,7 +39,7 @@ main {
 
 .text-caption {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .text-heading, .text-subheading {
@@ -406,6 +406,20 @@ main {
 
     .operator-card-slider-button {
         width: .8rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .text-subheading {
+        font-size: 1rem;
+    }
+
+    .text-caption {
+        font-size: .75rem;
+    }
+
+    .paragraph {
+        font-size: .75rem;
     }
 }
 
