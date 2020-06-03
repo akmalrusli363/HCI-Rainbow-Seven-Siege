@@ -367,7 +367,7 @@ input[type=submit] {
 }
 
 input[type=reset] {
-    background-color: #4CAF50;
+    background-color: var(--blue);
     color: black;
     padding: 12px 20px;
     border: none;
@@ -377,7 +377,7 @@ input[type=reset] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--blue);
 }
 
 input[type=reset]:hover {
@@ -408,7 +408,7 @@ input[type=reset]:hover {
 
 
 
-/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -458,7 +458,8 @@ input[type=reset]:hover {
     .col-number,
     .col-input,
     input[type=submit],
-    input[type=number] {
+    input[type=number],
+    input[type=reset] {
         width: 100%;
         margin-top: 0;
     }
