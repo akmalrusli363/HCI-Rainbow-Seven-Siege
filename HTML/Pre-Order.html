@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../CSS/Style.css"> 
-    <link rel="stylesheet" href="../CSS/Layout/Layout.css">
-    <script type="text/javascript" src="../JS/Pre-OrderScript.js"></script>
-    <title>Pre-Order</title>
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <link rel="stylesheet" href="../CSS/Layout/Layout.css">
+        <script type="text/javascript" src="../JS/Pre-OrderScript.js"></script>
+        <title>Pre-Order</title>
 </head>
 
 <body>
@@ -52,9 +53,9 @@
             </li>
         </ul>
     </nav>
-    
-    <main >
-        <div class="container-Form">
+
+    <main>
+        <div class="container-form">
             <h1>Pre-Order</h1>
             <p>Please fill this form to pre-order Rainbow Seven Siege</p>
             <form action="" id="form1" onsubmit="return formValidation()" method="POST">
@@ -63,7 +64,7 @@
                         <label for="username">Username</label>
                     </div>
                     <div class="col-input">
-                        <input type="text" name="username" id="username" >
+                        <input type="text" name="username" id="username">
                     </div>
                 </div>
                 <div class="row">
@@ -104,19 +105,28 @@
                     </div>
                     <div class="col-input">
                         <select name="typeOfGame" id="typeOfgame">
-                            <option value="PS4">PS4</option class ="option">
-                            <option value="Xbox">Xbox</option class = "option">
-                            <option value="PC">PC</option class = option>
+                            <option value="PS4">PS4</option>
+                            <option value="Xbox">Xbox</option>
+                            <option value="PC">PC</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
-                    <p class="col-label"><input type="checkbox" name="terms" required> I have read and agree to the <u>Terms and Service Conditions</u> </p>
+                    <div class="col-label">
+                    </div>
+                    <div class="col-input">
+                        <div class="checkmark">
+                            <input name="term" type="checkbox">
+                            <label for="term">
+                                I have read and agree to the Terms and Service Conditions
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <p><input type="submit" value="Submit" name="Submit">      
-                        <input type="reset" value="Reset" name="Reset">   
-                    </p> 
+                    <p><input type="submit" value="Submit" name="Submit">
+                        <input type="reset" value="Reset" name="Reset">
+                    </p>
                 </div>
             </form>
         </div>
@@ -140,4 +150,5 @@
     </footer>
 
 </body>
+
 </html>
