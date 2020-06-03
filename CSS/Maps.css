@@ -78,7 +78,7 @@
     justify-content: space-between;
 }
 
-.map-detail>* {
+.map-detail > * {
     padding: 0 1rem;
 }
 
@@ -105,14 +105,23 @@
     padding-left: 2rem;
 }
 
+#map-title {
+    text-transform: capitalize;
+}
+
+.map-menu {
+    margin: auto;
+    text-align: center;
+}
+
 .map-menu-button {
     margin: auto;
     min-width: 150px;
     max-width: 600px;
     text-align: center;
-    padding: 0.5rem 1rem;
     background-color: var(--blue);
     border-radius: 7px;
+    padding: 1rem 4rem;
 }
 
 @media only screen and (max-width: 800px) {

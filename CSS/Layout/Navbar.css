@@ -1,8 +1,4 @@
-@import "Variables.css";
-
-li {
-    list-style: none;
-}
+@import "../Variables.css";
 
 nav {
     position: sticky;
@@ -16,12 +12,17 @@ nav {
     justify-content: space-around;
 }
 
+nav li {
+    list-style: none;
+}
+
 nav .logo {
     flex: 2;
     order: 2;
     float: left;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
     text-align: center;
 }
 

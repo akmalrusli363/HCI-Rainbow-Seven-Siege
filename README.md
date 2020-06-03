@@ -6,21 +6,21 @@ Your task is to **create a logo and a promotional website** that represent the n
 
 ## Requirements
 
-The requirements for **Rainbow Seven Siege’s website** are described as follow :
+The requirements for **Rainbow Seven Siege's website** are described as follow :
 
-- [ ] Create new logo for Rainbow Seven Siege using **Adobe Photoshop**.
-- [ ] Design the blueprint of the game's homepage first (header, navigation, content, and footer) before starting the development of the HTML files using **Adobe Photoshop**.
-- [ ] Provide information about its game, such as a list of maps and characters in the game.
+- [x] Create new logo for Rainbow Seven Siege using **Adobe Photoshop**.
+- [x] Design the blueprint of the game's homepage first (header, navigation, content, and footer) before starting the development of the HTML files using **Adobe Photoshop**.
+- [x] Provide information about its game, such as a list of maps and characters in the game.
 - [ ] Build an **attractive, appealing, responsive and functional website**.
    - [ ] Use 5 kinds of CSS property and JavaScript
-   - [ ] Use Meta viewport tag and media screen rule that will be applied if the screen is below 800px screen.
+   - [x] Use Meta viewport tag and media screen rule that will be applied if the screen is below 800px screen.
 - [ ] Create 5 pages (Home, Quarantine, Operators, Maps, and Pre-order):
    - [ ] Home
    - [ ] Quarantine
    - [ ] Operators
    - [ ] Maps
    - [ ] Pre-order
-- [ ] Create a navigation menu using **Drop down menu using CSS**.
+- [x] Create a navigation menu using **Drop down menu using CSS**.
 
 ## TIPS
 
