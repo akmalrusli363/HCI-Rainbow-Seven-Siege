@@ -339,6 +339,8 @@ main {
 
 input[type=text],
 [type=number],
+[type=password],
+[type=email],
 select,
 textarea {
     width: 100%;
@@ -355,8 +357,8 @@ label {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    background-color:red;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -364,8 +366,22 @@ input[type=submit] {
     float: right;
 }
 
+input[type=reset] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+input[type=reset]:hover {
+    background-color: red;
 }
 
 .container-Form {
@@ -384,7 +400,13 @@ input[type=submit]:hover {
     float: left;
     width: 75%;
     margin-top: 6px;
+    color: black;
 }
+.option {
+    color: black;
+}
+
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -484,13 +506,9 @@ input[type=submit]:hover {
         font-size: 1rem;
     }
 
-<<<<<<< HEAD
-
-=======
     .text-caption {
         font-size: .75rem;
     }
->>>>>>> 43bb6c33ec17c85f0aa2adc56da461cfadf964a8
 
     .paragraph {
         font-size: .75rem;
