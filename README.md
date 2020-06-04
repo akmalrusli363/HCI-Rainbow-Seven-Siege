@@ -16,10 +16,10 @@ The requirements for **Rainbow Seven Siege's website** are described as follow :
    - [x] Use Meta viewport tag and media screen rule that will be applied if the screen is below 800px screen.
 - [ ] Create 5 pages (Home, Quarantine, Operators, Maps, and Pre-order):
    - [ ] Home
-   - [ ] Quarantine
-   - [ ] Operators
-   - [ ] Maps
-   - [ ] Pre-order
+   - [x] Quarantine
+   - [x] Operators
+   - [x] Maps
+   - [x] Pre-order
 - [x] Create a navigation menu using **Drop down menu using CSS**.
 
 ## TIPS
