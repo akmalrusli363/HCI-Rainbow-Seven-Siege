@@ -51,7 +51,7 @@ nav label {
 }
 
 .toggle-label {
-    color: white;
+    color: #f9f9f9;
 }
 
 .navbar-item {
@@ -71,7 +71,7 @@ nav label {
     line-height: 59px;
     text-align: center;
     padding: 0 .6rem;
-    background: #262626;
+    background-color: #262626;
 }
 
 .menu-item.active {
@@ -79,7 +79,7 @@ nav label {
 }
 
 nav ul li a {
-    color: white;
+    color: #f9f9f9;
     text-transform: none;
     text-decoration: none;
     display: block;
@@ -93,7 +93,7 @@ nav ul li a {
 }
 
 .dropdown a {
-    color: white;
+    color: #f9f9f9;
     display: block;
 }
 
@@ -115,9 +115,9 @@ nav ul li ul li {
 
 .badge {
     margin-left: .4rem;
-    background-color: #FF3030;
+    background-color: #f30307;
     height: 2rem;
-    color: white;
+    color: #f9f9f9;
     text-align: center;
     padding: 4px;
     font-size: .8rem;
@@ -125,8 +125,8 @@ nav ul li ul li {
 }
 
 .navbar-item li:not(.button-menu):hover, .dropdown > li:hover {
-    color: white;
-    background-color: #1971CC;
+    color: #f9f9f9;
+    background-color: #2b75b8;
     transition: all .5s;
 }
 
@@ -138,8 +138,8 @@ nav .right-button {
 }
 
 .action-button a {
-    color: white;
-    background-color: #1971CC;
+    color: #f9f9f9;
+    background-color: #2b75b8;
     font-size: .9em;
     font-weight: bold;
     text-transform: uppercase;
@@ -187,7 +187,7 @@ nav .right-button {
     }
 
     .navbar-item > li.submenu:hover {
-        color: white;
+        color: #f9f9f9;
         background-color: #555;
         padding: 0;
     }
