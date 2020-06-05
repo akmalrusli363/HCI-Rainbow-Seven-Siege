@@ -16,11 +16,16 @@ html {
 
 body {
     background-color: var(--black-dark);
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
+    flex: 1;
     margin: 1rem 2rem;
+    margin-bottom: 5rem;
 }
 
 .text-heading {
@@ -54,140 +59,10 @@ main {
     margin-bottom: 3rem;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    height: 2.5rem;
-}
-
-.menu {
-    display: flex;
-}
-
-.dropdown {
-    display: block;
-    position: relative;
-}
-
-.dropdown-toggler {
-    display: none;
-}
-
-.dropdown-list {
-    display: none;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    z-index: 1010;
-}
-
-.page-menu {
-    display: flex;
-    width: auto;
-}
-
-.menu-item,
-.dropdown-list-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    padding: 1rem 1rem;
-    transition: all 0.2s;
-}
-
-.dropdown-list-item {
-    background-color: var(--black-light);
-    box-shadow: 0.25rem 0.25rem 0.6rem #2626261e;
-}
-
-.dropdown-list-item .item-button {
-    border-radius: 0 0 0.25rem 0.25rem;
-}
-
-.menu-item.item-button {
-    padding-right: 0;
-    text-transform: uppercase;
-}
-
-.menu-item:not(.item-button):hover,
-.dropdown-list-item:hover {
-    background-color: var(--blue);
-    transition: all 0.2s;
-}
-
-.dropdown-toggler:checked+.dropdown-list {
-    display: block;
-}
-
-.badge {
-    display: inline-block;
-    text-align: center;
-    padding: 0.2rem;
-    background-color: var(--red);
-    vertical-align: middle;
-    margin-left: 0.3rem;
-}
-
-.button {
-    padding: 0.5rem 1.5rem;
-    color: white;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-}
-
-.button,
-.badge {
-    border-radius: 0.4rem;
-}
-
-.button-primary {
-    background-color: var(--blue);
-}
-
 .container {
     width: 90%;
     margin: auto;
     margin-bottom: 3rem;
-}
-
-.operator-card-list {
-    width: 90%;
-    margin: auto;
-    overflow-x: scroll;
-    white-space: nowrap;
-}
-
-.operator-card {
-    width: 12rem;
-    display: inline-block;
-    margin-right: 1.5rem;
-    background-color: var(--black-light);
-}
-
-.operator-card-content {
-    position: relative;
-    overflow: hidden;
-}
-
-.operator-card-icon {
-    width: 3rem;
-    position: absolute;
-    z-index: 5;
-    top: 0.5rem;
-    left: 0.5rem;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
 }
 
 .container,
@@ -204,6 +79,7 @@ main {
 .operator-card {
     width: 12rem;
     display: inline-block;
+    margin-right: 1.5rem;
     background-color: var(--black-light);
 }
 
@@ -218,6 +94,13 @@ main {
     overflow-x: hidden;
 }
 
+.operator-card-list {
+    width: 90%;
+    margin: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
 .operator-card-content {
     position: relative;
     overflow: hidden;
@@ -226,7 +109,7 @@ main {
 .operator-card-icon {
     width: 3rem;
     position: absolute;
-    z-index: 10;
+    z-index: 5;
     top: 0.5rem;
     left: 0.5rem;
 }
@@ -268,7 +151,7 @@ main {
 }
 
 .operator-card:hover .operator-card-footer {
-    color: #2b75b8;
+    color: var(--blue);
     text-shadow: 0.2rem 0.2rem 0.5rem #2b74b84d, 0.1rem 0.1rem 0.3rem #f9f9f93b;
     font-weight: 700;
     font-size: 1.5rem;
@@ -423,24 +306,6 @@ input[type=reset]:hover {
 }
 
 @media only screen and (max-width: 799px) {
-    .page-menu {
-        display: block;
-        width: 100%;
-    }
-
-    .menu-item:not(.item-button),
-    .dropdown-list-item {
-        display: block;
-        position: relative;
-        width: 100%;
-        transition: all 0.2s;
-    }
-
-    .dropdown-toggler:checked+.dropdown-list {
-        display: block;
-        position: relative;
-    }
-
     .operator-card {
         width: 9rem;
     }
@@ -469,10 +334,13 @@ input[type=reset]:hover {
         width: 100%;
         margin-top: 0;
     }
+
+    .form-buttons input {
+        margin: .5rem 0;
+    }
 }
 
 @media only screen and (max-width: 576px) {
-
     .container {
         width: 95%;
     }

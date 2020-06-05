@@ -17,11 +17,11 @@ nav li {
 }
 
 nav .logo {
-    flex: 2;
+    flex: 1;
     order: 2;
     float: left;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-align: center;
 }
 
@@ -44,6 +44,7 @@ nav img {
 .navbar-item {
     order: 3;
     flex: 10;
+    height: 100%;
     float: right;
     display: flex;
     align-items: center;
@@ -53,10 +54,15 @@ nav img {
 .menu-item {
     position: relative;
     display: block;
+    height: 100%;
     line-height: 59px;
     text-align: center;
     padding: 0 .6rem;
     background: var(--black-light);
+}
+
+.menu-item.active {
+    border-bottom: 3px solid var(--blue-light);
 }
 
 nav ul li a {
@@ -66,19 +72,19 @@ nav ul li a {
     display: block;
 }
 
-.dropDown {
+.dropdown {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: var(--black-light);
     border-radius: 0 0 4px 4px;
 }
 
-.dropDown a {
+.dropdown a {
     color: var(--white);
     display: block;
 }
 
-.menu-item:hover .dropDown {
+.menu-item:hover .dropdown {
     position: absolute;
     width: 8.5rem;
     display: block;
@@ -94,7 +100,7 @@ nav ul li ul li {
     display: inline-flex;
 }
 
-.quarantine div span {
+.badge {
     margin-left: .4rem;
     background-color: var(--red);
     height: 2rem;
@@ -105,7 +111,7 @@ nav ul li ul li {
     border-radius: 6px;
 }
 
-.navbar-item li:not(.button-menu):hover, .dropDown > li:hover {
+.navbar-item li:not(.button-menu):hover, .dropdown > li:hover {
     color: var(--white);
     background-color: var(--blue);
     transition: all .5s;
@@ -118,18 +124,20 @@ nav .right-button {
     margin-left: .5rem;
 }
 
-.action-button {
-    padding: 0.5rem 1rem;
+.action-button a {
+    color: var(--white);
     background-color: var(--blue);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
     border-radius: .5rem;
 }
 
-.action-button a {
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--white);
-    letter-spacing: 2px;
-    text-decoration: none;
+.action-button a:hover {
+    background-color: var(--blue-light);
 }
 
 #toggle {
@@ -140,7 +148,6 @@ nav .right-button {
     margin-right: 1rem;
     float: right;
     font-size: 1.5rem;
-    /* line-height: 3.5rem; */
     display: none;
     width: 2rem;
     cursor: pointer;
@@ -160,17 +167,18 @@ nav .right-button {
         justify-content: space-around;
         border-bottom: 1px solid var(--dark-gray);
     }
+    
+    nav .logo {
+        margin-left: 5rem;
+    }
 
     .navbar-item {
         display: none;
         position: absolute;
         width: 100%;
+        height: auto;
         top: 60px;
         text-align: center;
-    }
-
-    nav .logo {
-        margin-left: 4rem;
     }
 
     .navbar-item > li.submenu:hover {
@@ -193,36 +201,52 @@ nav .right-button {
     .menu-item {
         display: flex;
         align-items: center;
+        padding: 0;
         height: 100%;
         border: 1px solid var(--black-light);
     }
 
-    .dropDown {
+    .menu-item.active {
+        border-bottom: 0;
+    }
+
+    .menu-item.active > a {
+        font-weight: bold;
+    }
+
+    .dropdown {
         display: inline-block;
         margin: auto;
         min-width: 4rem;
         line-height: 1;
-
         border: 2px solid var(--dark-gray);
     }
 
-    .dropDown > li {
+    .dropdown > li {
         display: inline-block;
         padding: .5rem 0;
         border: 1px solid var(--dark-gray);
         text-align: center;
     }
 
-    .dropDown > li > a {
+    .dropdown > li > a {
         display: block;
         padding: 0 2rem;
     }
 
-    .menu-item:hover .dropDown {
+    .menu-item:not(.button-menu),
+    .dropdown-list {
+        display: block;
+        position: relative;
+        transition: all 0.2s;
+    }
+
+    .menu-item:hover .dropdown {
+        display: block;
         width: fit-content;
     }
 
-    .menu-item:hover .dropDown, .dropDown {
+    .menu-item:hover .dropdown, .dropdown {
         position: static;
         width: 100%;
         line-height: 2.5rem;

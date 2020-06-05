@@ -248,26 +248,6 @@ img.images {
     scrollbar-width: none;
 }
 
-footer {
-    height: 60px;
-    background-color: var(--black-light);
-    text-align: center;
-}
-
-.footerDesc p {
-    color: var(--white);
-    font-weight: 700;
-    padding-top: 5px;
-}
-
-.footerContent img {
-    margin-top: 5px;
-    height: 20px;
-    width: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 .Box1,
 .Box2 {
     scrollbar-color: #888 var(--black-light);
@@ -291,10 +271,6 @@ footer {
 @media screen and (max-width: 799px) {
     label {
         display: block;
-    }
-
-    .Login {
-        display: none;
     }
 
     .navbar-item {
