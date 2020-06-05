@@ -15,7 +15,6 @@
 .map-content {
     flex: 1 1 22.5%;
     position: relative;
-    padding: 0.2rem 0.1rem;
     margin: 0.5rem 0.5rem;
     min-width: 15rem;
     width: 25rem;
@@ -45,14 +44,11 @@
     padding: .5rem;
     width: 100%;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
 }
 
 .map-content:hover {
     background-color: var(--blue);
-    transition: ease-in .1s;
+    transition: ease-out .1s;
     object-fit: cover;
 }
 
@@ -69,7 +65,7 @@
 .map-content,
 .map-content *,
 .map-content:hover * {
-    transition: ease-in .2s;
+    transition: ease-out .2s;
 }
 
 .map-detail {
@@ -120,8 +116,12 @@
     max-width: 600px;
     text-align: center;
     background-color: var(--blue);
-    border-radius: 7px;
+    border-radius: .5rem;
     padding: 1rem 4rem;
+}
+
+.map-menu-button:hover {
+    background-color: var(--blue-light);
 }
 
 @media only screen and (max-width: 800px) {
