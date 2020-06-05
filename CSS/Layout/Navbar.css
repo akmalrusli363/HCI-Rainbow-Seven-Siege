@@ -10,6 +10,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: .9rem;
 }
 
 nav li {
@@ -127,7 +128,7 @@ nav .right-button {
 .action-button a {
     color: var(--white);
     background-color: var(--blue);
-    font-size: .9rem;
+    font-size: .9em;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -165,6 +166,7 @@ nav .right-button {
         align-items: center;
         justify-content: space-around;
         border-bottom: 1px solid var(--dark-gray);
+        font-size: 1rem;
     }
     
     nav .logo {
