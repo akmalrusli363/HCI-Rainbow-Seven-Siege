@@ -127,7 +127,7 @@ nav .right-button {
 .action-button a {
     color: var(--white);
     background-color: var(--blue);
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -145,7 +145,6 @@ nav .right-button {
 }
 
 .label {
-    margin-right: 1rem;
     float: right;
     font-size: 1.5rem;
     display: none;
@@ -248,7 +247,7 @@ nav .right-button {
 
     .menu-item:hover .dropdown, .dropdown {
         position: static;
-        width: 100%;
+        width: 99%;
         line-height: 2.5rem;
     }
 
