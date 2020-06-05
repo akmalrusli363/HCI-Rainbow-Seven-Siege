@@ -1,5 +1,4 @@
 @import "Font-style.css";
-@import "Variables.css";
 
 .map-gallery {
     margin: auto;
@@ -22,7 +21,7 @@
     height: 15rem;
     overflow: hidden;
     display: block;
-    border: 1px solid var(--blue);
+    border: 1px solid #1971CC;
     align-self: stretch;
     align-content: center;
     text-align: center;
@@ -39,7 +38,7 @@
 }
 
 .map-content .map-name {
-    background-color: #26262699;
+    background-color: hsla(0, 0%, 15%, 0.6);
     position: absolute;
     padding: .5rem;
     width: 100%;
@@ -47,7 +46,7 @@
 }
 
 .map-content:hover {
-    background-color: var(--blue);
+    background-color: #1971CC;
     transition: ease-out .1s;
     object-fit: cover;
 }
@@ -84,7 +83,6 @@
     max-width: 30rem;
     min-width: 20rem;
     object-fit: scale-down;
-
 }
 
 .map-detail .map-overview {
@@ -119,13 +117,13 @@
     min-width: 150px;
     max-width: 600px;
     text-align: center;
-    background-color: var(--blue);
+    background-color: #1971CC;
     border-radius: .5rem;
     padding: 1rem 4rem;
 }
 
 .map-menu-button:hover {
-    background-color: var(--blue-light);
+    background-color: #3390F0;
 }
 
 @media only screen and (max-width: 800px) {
