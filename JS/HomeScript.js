@@ -9,7 +9,7 @@ $(function(){
 
     var slidesCont = discoverContent.children('.sliderImages');
     var sliderMain = discoverContent.children('.sliderMain');
-    var pager = discoverContent.children('.pager');
+    var pager = sliderMain.children('.pager');
 
     var slides = slidesCont.children('.slide');
     var arrowsCont = sliderMain.children('.sliderContent');
