@@ -186,6 +186,7 @@ nav .right-button {
         height: auto;
         top: 60px;
         text-align: center;
+        background-color: #262626;
     }
 
     .navbar-item > li.submenu:hover {
@@ -205,16 +206,16 @@ nav .right-button {
         display: block;
     }
 
+    .menu-item.active {
+        border-bottom: inherit;
+    }
+
     .menu-item {
         display: flex;
         align-items: center;
         padding: 0;
         height: 100%;
         border: 1px solid var(--black-light);
-    }
-
-    .menu-item.active {
-        border-bottom: 0;
     }
 
     .menu-item.active > a {
