@@ -3,6 +3,10 @@ function formValidation() {
     var password = new String(document.forms["form1"]["password"].value);
     var address = new String(document.forms["form1"]["address"].value);
     var email = new String(document.forms["form1"]["email"].value);
+    
+    
+
+    
 
     //validate username
     if (username.length < 1) {
@@ -34,7 +38,9 @@ function formValidation() {
         return false;
     }
 
+
     window.alert("Your order has been placed");
 
     return true;
 }
+
