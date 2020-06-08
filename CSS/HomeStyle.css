@@ -269,65 +269,6 @@ img.images {
         display: block;
     }
 
-    .navbar-item {
-        display: none;
-        position: absolute;
-        width: 100%;
-        top: 60px;
-        text-align: center;
-    }
-
-    .navbar-item > li:first-child:hover{
-        color: var(--white);
-        background-color: var(--black-light);
-    }
-
-    .hamburg-button {
-        display: inline-block;
-        transform: none;
-        padding: .8rem 1rem;
-        line-height: 1;
-    }
-
-    .toggleMenu:checked + .navbar-item, .toggleMenu:checked + .navbar-item li {
-        display: block;
-    }
-
-    .menu-Title {
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    .dropDown {
-        display: inline-block;
-        margin: auto;
-        min-width: 50px;
-        line-height: 1;
-
-        transform: translateY(-10%);
-        border: 2px solid var(--blue);
-    }
-
-    .dropDown > li {
-        display: inline-block;
-        padding: .5rem 0;
-        text-align: center;
-    }
-
-    .dropDown > li > a {
-        display: block;
-        padding: 0 2rem;
-    }
-
-    .menu-Title:hover .dropDown {
-        width: fit-content;
-    }
-
-    .menu-Title:hover .dropDown, .dropDown {
-        position: static;
-    }
-
     .Box {
         width: 120%;
     }

@@ -30,8 +30,22 @@ nav .burger-menu {
     order: 99;
 }
 
+nav .toggle-label {
+    float: right;
+    font-size: 1.5rem;
+    display: none;
+    width: 2rem;
+    cursor: pointer;
+}
+
 nav img {
     height: 40px;
+}
+
+nav label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .burger-menu-button {
@@ -145,16 +159,8 @@ nav .right-button {
     display: none;
 }
 
-.label {
-    float: right;
-    font-size: 1.5rem;
-    display: none;
-    width: 2rem;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 799px) {
-    .label {
+    nav .toggle-label {
         display: block;
     }
 
