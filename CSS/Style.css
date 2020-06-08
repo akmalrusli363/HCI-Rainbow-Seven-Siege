@@ -1,11 +1,26 @@
 @import "Font-style.css";
-@import "Variables.css";
 @import "Utils.css";
 
+/*
+Color lists
+''''''''''''''''''''
+--white: #f9f9f9;
+--gray: #595959;
+--dark-gray: #393939;
+--black-light: #262626;
+--black-dark: #131313;
+
+--blue: #2B75B8;
+--green: #50B050;
+--red: #F30307;
+
+--blue-light: #3390F0;
+--green-light: #70C070;
+*/
+
 * {
-    box-sizing: border-box;
     text-decoration: none;
-    color: var(--white);
+    color: #f9f9f9;
     margin: 0;
     padding: 0;
 }
@@ -15,7 +30,7 @@ html {
 }
 
 body {
-    background-color: var(--black-dark);
+    background-color: #1e1e1e;
     min-height: 100vh;
     position: relative;
     display: flex;
@@ -34,7 +49,7 @@ main {
 }
 
 .text-heading-highlight {
-    color: var(--blue);
+    color: #2b75b8;
 }
 
 .text-subheading {
@@ -55,7 +70,7 @@ main {
 
 .header {
     padding: 0rem 1rem;
-    background-color: var(--black-light);
+    background-color: #262626;
     margin-bottom: 3rem;
 }
 
@@ -80,7 +95,7 @@ main {
     width: 12rem;
     display: inline-block;
     margin-right: 1.5rem;
-    background-color: var(--black-light);
+    background-color: #262626;
 }
 
 .operator-card:not(:last-child) {
@@ -124,7 +139,7 @@ main {
 .operator-card-footer {
     padding: 0.5rem;
     padding-top: 10rem;
-    background: linear-gradient(to top, #000000, #00000000);
+    background: linear-gradient(to top, #000000, hsla(0, 0%, 0%, 0));
 
     text-transform: capitalize;
 
@@ -151,8 +166,8 @@ main {
 }
 
 .operator-card:hover .operator-card-footer {
-    color: var(--blue);
-    text-shadow: 0.2rem 0.2rem 0.5rem #2b74b84d, 0.1rem 0.1rem 0.3rem #f9f9f93b;
+    color: #2b75b8;
+    text-shadow: 0.2rem 0.2rem 0.5rem #19719999, 0.1rem 0.1rem 0.3rem #f9f9f93b;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -165,7 +180,7 @@ main {
 
 .article-header {
     padding: 4rem 0;
-    background: var(--black-dark) url(../Assets/Images/Quarantine/Quarantine-Header-Bg.jpg) no-repeat scroll center;
+    background: #1e1e1e url(../Assets/Images/Quarantine/Quarantine-Header-Bg.jpg) no-repeat scroll center;
     background-size: cover;
     position: relative;
     margin-bottom: 3rem;
@@ -180,7 +195,7 @@ main {
 
     width: 100%;
     height: 100%;
-    background-color: var(--black-dark);
+    background-color: #1e1e1e;
     opacity: .8;
 }
 
@@ -210,7 +225,7 @@ main {
 .article-content-image {
     max-width: 37.5rem;
     width: 70%;
-    border: 2px solid var(--white);
+    border: 2px solid white;
     margin-bottom: .5rem;
 }
 
@@ -241,7 +256,7 @@ label {
 }
 
 option {
-    background-color: var(--black-light);
+    background-color: #262626;
 }
 
 input[type=checkbox] {
@@ -253,8 +268,8 @@ input[type=checkbox] {
 }
 
 input[type=submit] {
-    background-color: var(--green);
-    color: white;
+    background-color: #50B050;
+    color: #f9f9f9;
     padding: 12px 20px;
     border: none;
     border-radius: .5rem;
@@ -263,8 +278,8 @@ input[type=submit] {
 }
 
 input[type=reset] {
-    background-color: var(--blue);
-    color: white;
+    background-color: #2b75b8;
+    color: #f9f9f9;
     padding: 12px 20px;
     border: none;
     border-radius: .5rem;
@@ -273,11 +288,11 @@ input[type=reset] {
 }
 
 input[type=submit]:hover {
-    background-color: var(--green-light);
+    background-color: #70C070;
 }
 
 input[type=reset]:hover {
-    background-color: var(--blue-light);
+    background-color: #3390F0;
 }
 
 .container-form {

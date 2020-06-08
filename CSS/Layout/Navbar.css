@@ -1,9 +1,7 @@
-@import "../Variables.css";
-
 nav {
     position: sticky;
     top: 0;
-    background-color: var(--black-light);
+    background-color: #262626;
     width: 100%;
     height: 60px;
     z-index: 20;
@@ -53,7 +51,7 @@ nav label {
 }
 
 .toggle-label {
-    color: var(--white);
+    color: #f9f9f9;
 }
 
 .navbar-item {
@@ -73,15 +71,15 @@ nav label {
     line-height: 59px;
     text-align: center;
     padding: 0 .6rem;
-    background: var(--black-light);
+    background-color: #262626;
 }
 
 .menu-item.active {
-    border-bottom: 3px solid var(--blue-light);
+    border-bottom: 3px solid #3390F0;
 }
 
 nav ul li a {
-    color: var(--white);
+    color: #f9f9f9;
     text-transform: none;
     text-decoration: none;
     display: block;
@@ -90,12 +88,12 @@ nav ul li a {
 .dropdown {
     display: none;
     position: relative;
-    background-color: var(--black-light);
+    background-color: #262626;
     border-radius: 0 0 4px 4px;
 }
 
 .dropdown a {
-    color: var(--white);
+    color: #f9f9f9;
     display: block;
 }
 
@@ -117,9 +115,9 @@ nav ul li ul li {
 
 .badge {
     margin-left: .4rem;
-    background-color: var(--red);
+    background-color: #f30307;
     height: 2rem;
-    color: var(--white);
+    color: #f9f9f9;
     text-align: center;
     padding: 4px;
     font-size: .8rem;
@@ -127,8 +125,8 @@ nav ul li ul li {
 }
 
 .navbar-item li:not(.button-menu):hover, .dropdown > li:hover {
-    color: var(--white);
-    background-color: var(--blue);
+    color: #f9f9f9;
+    background-color: #2b75b8;
     transition: all .5s;
 }
 
@@ -140,8 +138,8 @@ nav .right-button {
 }
 
 .action-button a {
-    color: var(--white);
-    background-color: var(--blue);
+    color: #f9f9f9;
+    background-color: #2b75b8;
     font-size: .9em;
     font-weight: bold;
     text-transform: uppercase;
@@ -152,7 +150,7 @@ nav .right-button {
 }
 
 .action-button a:hover {
-    background-color: var(--blue-light);
+    background-color: #3390F0;
 }
 
 #toggle {
@@ -171,7 +169,7 @@ nav .right-button {
     nav {
         align-items: center;
         justify-content: space-around;
-        border-bottom: 1px solid var(--dark-gray);
+        border-bottom: 1px solid #555;
         font-size: 1rem;
     }
     
@@ -190,8 +188,8 @@ nav .right-button {
     }
 
     .navbar-item > li.submenu:hover {
-        color: var(--white);
-        background-color: var(--dark-gray);
+        color: #f9f9f9;
+        background-color: #555;
         padding: 0;
     }
 
@@ -215,7 +213,7 @@ nav .right-button {
         align-items: center;
         padding: 0;
         height: 100%;
-        border: 1px solid var(--black-light);
+        border: 1px solid #262626;
     }
 
     .menu-item.active > a {
@@ -227,13 +225,13 @@ nav .right-button {
         margin: auto;
         min-width: 4rem;
         line-height: 1;
-        border: 2px solid var(--dark-gray);
+        border: 2px solid #555;
     }
 
     .dropdown > li {
         display: inline-block;
         padding: .5rem 0;
-        border: 1px solid var(--dark-gray);
+        border: 1px solid #555;
         text-align: center;
     }
 
