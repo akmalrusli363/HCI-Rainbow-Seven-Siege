@@ -1,20 +1,20 @@
 @import "Font-style.css";
-@import "Variables.css";
 
 * {
     margin: 0;
     padding: 0;
+    color: #f9f9f9;
     font-family: 'Open Sans';
 }
 
 body {
-    background-color: var(--black-dark);
+    background-color: #1e1e1e;
     position: relative;
 }
 
 .DiscoverContent {
     display: flex;
-    background-color: yellow;
+    background-color: #262626;
     height: 400px;
     width: auto;
     margin-left: auto;
@@ -27,13 +27,13 @@ body {
     align-items: center;
     /* background-color: orange; */
     height: 40%;
-    width: 70%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .DiscoverBox .TitleD p {
-    color: var(--white);
+    color: #f9f9f9;
     font-weight: 500;
     padding-bottom: 10px;
 }
@@ -41,21 +41,18 @@ body {
 .sliderImages {
     width: 63%;
     height: inherit;
-    background: brown;
+    background: #262626;
 }
 
 .sliderContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: pink; */
 }
 
 .sliderMain {
-    justify-content: space-between;
     align-items: center;
     width: 37%;
-    height: inherit;
     background-color: #262626;
 }
 
@@ -63,7 +60,7 @@ body {
     margin-left: 37px;
     margin-bottom: 10px;
     text-decoration: none;
-    color: var(--white);
+    color: #f9f9f9;
     /* background-color: #1971c2; */
     font-weight: bold;
 }
@@ -79,7 +76,7 @@ body {
     margin-top: 10px;
     text-align: justify;
     font-size: 14px;
-    height: 210px;
+    height: 60%;
     overflow-y: scroll;
     /* background-color: violet; */
 }
@@ -91,7 +88,7 @@ body {
 
 .sliderMainContent h2,
 .sliderMainContent p {
-    color: var(--white);
+    color: #f9f9f9;
     /* background-color: tomato; */
 }
 
@@ -113,7 +110,7 @@ body {
     /* background: powderblue; */
     font-size: 17px;
     font-weight: 750;
-    color: var(--white);
+    color: #f9f9f9;
 }
 
 .arrows {
@@ -130,7 +127,7 @@ body {
 }
 
 .Updates {
-    width: 70%;
+    width: 75%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -143,13 +140,13 @@ body {
 .Updates .Box2 {
     width: 440px;
     height: 450px;
-    background: var(--black-light);
+    background: #262626;
     margin: 10px 0 20px 0;
     overflow-y: scroll;
 }
 
 .TitleUpdate p {
-    color: var(--white);
+    color: #f9f9f9;
     font-weight: 500;
 }
 
@@ -161,7 +158,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* background-color: red; */
-    border-bottom: 2px solid var(--white);
+    border-bottom: 2px solid white;
 }
 
 .img-BoxUpdates {
@@ -181,16 +178,20 @@ img.images {
 
 .BoxText h5 {
     color: #5d5b5b;
+    font-size: 10.5px;
 }
 
 .BoxText h3 {
-    color: var(--white);
+    font-size: 12px;
+    color: #f9f9f9;
+    overflow-y:scroll;
+    height: 16px;
+    margin-bottom: 10px;
 }
 
 .BoxUpdates p,
-.BoxUpdatesLast p {
-    /* margin: 10px; */
-    color: var(--white);
+.BoxUpdatesLast p { 
+    color: #f9f9f9;
     overflow-y: scroll;
     height: 60px;
     font-size: 10px;
@@ -223,10 +224,10 @@ img.images {
 }
 
 .btnViewMore {
-    color: var(--white);
+    color: #f9f9f9;
     text-decoration: none;
     line-height: 50px;
-    background-color: var(--blue);
+    background-color: #2b75b8;
     padding: 10px 18px;
     border-radius: 7px;
     font-weight: 600;
@@ -234,7 +235,7 @@ img.images {
 
 .BoxUpdates p::-webkit-scrollbar,
 .BoxUpdatesLast p::-webkit-scrollbar,
-.sliderMainContent p::-webkit-scrollbar {
+.sliderMainContent p::-webkit-scrollbar, .BoxText h3::-webkit-scrollbar {
     display: none;
 }
 
@@ -244,29 +245,9 @@ img.images {
     scrollbar-width: none;
 }
 
-footer {
-    height: 60px;
-    background-color: var(--black-light);
-    text-align: center;
-}
-
-.footerDesc p {
-    color: var(--white);
-    font-weight: 700;
-    padding-top: 5px;
-}
-
-.footerContent img {
-    margin-top: 5px;
-    height: 20px;
-    width: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 .Box1,
 .Box2 {
-    scrollbar-color: #888 var(--black-light);
+    scrollbar-color: #888 #262626;
     scrollbar-width: thin;
 }
 
@@ -289,10 +270,6 @@ footer {
         display: block;
     }
 
-    .Login {
-        display: none;
-    }
-
     .navbar-item {
         display: none;
         position: absolute;
@@ -302,8 +279,8 @@ footer {
     }
 
     .navbar-item > li:first-child:hover{
-        color: var(--white);
-        background-color: var(--black-light);
+        color: #f9f9f9;
+        background-color: #262626;
     }
 
     .hamburg-button {
@@ -330,7 +307,7 @@ footer {
         line-height: 1;
 
         transform: translateY(-10%);
-        border: 2px solid var(--blue);
+        border: 2px solid #1971CC;
     }
 
     .dropDown > li {
@@ -363,6 +340,48 @@ footer {
     .toggleMenu:checked + nav .navbar-item {
         display: none;
     }
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+    }
+    
+    .DiscoverBox{
+        height: 550px;
+    }
+    .sliderImages{
+        height: 60%;
+    }
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sliderMain{
+        position: relative;
+        width: inherit;
+        height: 300px;
+    }
+    .DiscoverContent{
+        display: block; 
+        position: relative;
+    }
+
+    .sliderMainContent {
+        width: 400px;
+        height: 180px;
+    }
+
+    .sliderMainContent p {
+        margin-top: 10px;
+        text-align: justify;
+        font-size: 14px;
+        height: 100px;
+        overflow-y: scroll;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -372,4 +391,36 @@ footer {
         height: 300px;
         width: 350px;
     }
+
+    .sliderMainContent p {
+        margin-top: 10px;
+        text-align: justify;
+        font-size: 10px;
+        height: 60%;
+        overflow-y: scroll;
+        /* background-color: violet; */
+    }
+
+    .BoxUpdates p,
+    .BoxUpdatesLast p { 
+        color: var(--white);
+        overflow-y: scroll;
+        height: 60px;
+        font-size: 6px;
+        text-align: justify;
+    }
+
+    .BoxText h5 {
+        color: #5d5b5b;
+        font-size: 6.5px;
+    }
+
+    .BoxText h3 {
+        font-size: 12px;
+        color: var(--white);
+        overflow-y:scroll;
+        height: 12px;
+        margin-bottom: 10px;
+    }
+
 }

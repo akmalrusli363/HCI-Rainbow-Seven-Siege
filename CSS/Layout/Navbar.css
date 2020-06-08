@@ -1,15 +1,14 @@
-@import "../Variables.css";
-
 nav {
     position: sticky;
     top: 0;
-    background-color: var(--black-light);
+    background-color: #262626;
     width: 100%;
     height: 60px;
     z-index: 20;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: .9rem;
 }
 
 nav li {
@@ -17,11 +16,11 @@ nav li {
 }
 
 nav .logo {
-    flex: 2;
+    flex: 1;
     order: 2;
     float: left;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-align: center;
 }
 
@@ -29,8 +28,22 @@ nav .burger-menu {
     order: 99;
 }
 
+nav .toggle-label {
+    float: right;
+    font-size: 1.5rem;
+    display: none;
+    width: 2rem;
+    cursor: pointer;
+}
+
 nav img {
     height: 40px;
+}
+
+nav label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .burger-menu-button {
@@ -38,12 +51,13 @@ nav img {
 }
 
 .toggle-label {
-    color: var(--white);
+    color: #f9f9f9;
 }
 
 .navbar-item {
     order: 3;
     flex: 10;
+    height: 100%;
     float: right;
     display: flex;
     align-items: center;
@@ -53,32 +67,37 @@ nav img {
 .menu-item {
     position: relative;
     display: block;
+    height: 100%;
     line-height: 59px;
     text-align: center;
     padding: 0 .6rem;
-    background: var(--black-light);
+    background-color: #262626;
+}
+
+.menu-item.active {
+    border-bottom: 3px solid #3390F0;
 }
 
 nav ul li a {
-    color: var(--white);
+    color: #f9f9f9;
     text-transform: none;
     text-decoration: none;
     display: block;
 }
 
-.dropDown {
+.dropdown {
     display: none;
-    position: absolute;
-    background-color: var(--black-light);
+    position: relative;
+    background-color: #262626;
     border-radius: 0 0 4px 4px;
 }
 
-.dropDown a {
-    color: var(--white);
+.dropdown a {
+    color: #f9f9f9;
     display: block;
 }
 
-.menu-item:hover .dropDown {
+.menu-item:hover .dropdown {
     position: absolute;
     width: 8.5rem;
     display: block;
@@ -94,20 +113,20 @@ nav ul li ul li {
     display: inline-flex;
 }
 
-.quarantine div span {
+.badge {
     margin-left: .4rem;
-    background-color: var(--red);
+    background-color: #f30307;
     height: 2rem;
-    color: var(--white);
+    color: #f9f9f9;
     text-align: center;
     padding: 4px;
     font-size: .8rem;
     border-radius: 6px;
 }
 
-.navbar-item li:not(.button-menu):hover, .dropDown > li:hover {
-    color: var(--white);
-    background-color: var(--blue);
+.navbar-item li:not(.button-menu):hover, .dropdown > li:hover {
+    color: #f9f9f9;
+    background-color: #2b75b8;
     transition: all .5s;
 }
 
@@ -118,36 +137,28 @@ nav .right-button {
     margin-left: .5rem;
 }
 
-.action-button {
+.action-button a {
+    color: #f9f9f9;
+    background-color: #2b75b8;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
     padding: 0.5rem 1rem;
-    background-color: var(--blue);
     border-radius: .5rem;
 }
 
-.action-button a {
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--white);
-    letter-spacing: 2px;
-    text-decoration: none;
+.action-button a:hover {
+    background-color: #3390F0;
 }
 
 #toggle {
     display: none;
 }
 
-.label {
-    margin-right: 1rem;
-    float: right;
-    font-size: 1.5rem;
-    /* line-height: 3.5rem; */
-    display: none;
-    width: 2rem;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 799px) {
-    .label {
+    nav .toggle-label {
         display: block;
     }
 
@@ -158,24 +169,27 @@ nav .right-button {
     nav {
         align-items: center;
         justify-content: space-around;
-        border-bottom: 1px solid var(--dark-gray);
+        border-bottom: 1px solid #555;
+        font-size: 1rem;
+    }
+    
+    nav .logo {
+        margin-left: 5rem;
     }
 
     .navbar-item {
         display: none;
         position: absolute;
         width: 100%;
+        height: auto;
         top: 60px;
         text-align: center;
-    }
-
-    nav .logo {
-        margin-left: 4rem;
+        background-color: #262626;
     }
 
     .navbar-item > li.submenu:hover {
-        color: var(--white);
-        background-color: var(--dark-gray);
+        color: #f9f9f9;
+        background-color: #555;
         padding: 0;
     }
 
@@ -190,41 +204,57 @@ nav .right-button {
         display: block;
     }
 
+    .menu-item.active {
+        border-bottom: inherit;
+    }
+
     .menu-item {
         display: flex;
         align-items: center;
+        padding: 0;
         height: 100%;
-        border: 1px solid var(--black-light);
+        border: 1px solid #262626;
     }
 
-    .dropDown {
+    .menu-item.active > a {
+        font-weight: bold;
+    }
+
+    .dropdown {
         display: inline-block;
         margin: auto;
         min-width: 4rem;
         line-height: 1;
-
-        border: 2px solid var(--dark-gray);
+        border: 2px solid #555;
     }
 
-    .dropDown > li {
+    .dropdown > li {
         display: inline-block;
         padding: .5rem 0;
-        border: 1px solid var(--dark-gray);
+        border: 1px solid #555;
         text-align: center;
     }
 
-    .dropDown > li > a {
+    .dropdown > li > a {
         display: block;
         padding: 0 2rem;
     }
 
-    .menu-item:hover .dropDown {
+    .menu-item:not(.button-menu),
+    .dropdown-list {
+        display: block;
+        position: relative;
+        transition: all 0.2s;
+    }
+
+    .menu-item:hover .dropdown {
+        display: block;
         width: fit-content;
     }
 
-    .menu-item:hover .dropDown, .dropDown {
+    .menu-item:hover .dropdown, .dropdown {
         position: static;
-        width: 100%;
+        width: 99%;
         line-height: 2.5rem;
     }
 

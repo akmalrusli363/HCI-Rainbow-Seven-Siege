@@ -1,5 +1,5 @@
 footer {
-    height: 60px;
+    padding: 1rem;
     background-color: #262626;
     text-align: center;
 }
@@ -12,7 +12,7 @@ footer {
 }
 
 .footerDesc p {
-    color: white;
+    color: #f9f9f9;
     font-weight: 700;
     padding-top: 5px;
 }
@@ -23,4 +23,11 @@ footer {
     width: 20px;
     margin-left: 5px;
     margin-right: 5px;
+    transition: ease-out .2s;
+}
+
+.footerContent img:hover {
+    -moz-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    transition: ease-out .2s;
 }
