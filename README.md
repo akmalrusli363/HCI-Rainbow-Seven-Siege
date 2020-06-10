@@ -11,11 +11,11 @@ The requirements for **Rainbow Seven Siege's website** are described as follow :
 - [x] Create new logo for Rainbow Seven Siege using **Adobe Photoshop**.
 - [x] Design the blueprint of the game's homepage first (header, navigation, content, and footer) before starting the development of the HTML files using **Adobe Photoshop**.
 - [x] Provide information about its game, such as a list of maps and characters in the game.
-- [ ] Build an **attractive, appealing, responsive and functional website**.
-   - [ ] Use 5 kinds of CSS property and JavaScript
+- [x] Build an **attractive, appealing, responsive and functional website**.
+   - [x] Use 5 kinds of CSS property and JavaScript
    - [x] Use Meta viewport tag and media screen rule that will be applied if the screen is below 800px screen.
-- [ ] Create 5 pages (Home, Quarantine, Operators, Maps, and Pre-order):
-   - [ ] Home
+- [x] Create 5 pages (Home, Quarantine, Operators, Maps, and Pre-order):
+   - [x] Home
    - [x] Quarantine
    - [x] Operators
    - [x] Maps
