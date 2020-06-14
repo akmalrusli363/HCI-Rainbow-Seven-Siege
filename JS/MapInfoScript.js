@@ -174,7 +174,7 @@ function loadElements() {
     var mapID = getUrlParameter("id");
 
     if (mapID === null) {
-        window.location.replace("../HTML/Maps.html");
+        window.location.replace("Maps.html");
     }
 
     var mapObject = jsonMapInfo;
@@ -186,12 +186,12 @@ function loadElements() {
         }
     });
 
-    if (mapProperties === null) {
-        window.location.replace("../HTML/Maps.html");
+    if (mapProperties == null) {
+        window.location.replace("Maps.html");
     }
 
     document.getElementById("map-title").innerHTML = mapProperties.mapName;
-    document.getElementById("map-image").src = "../Assets/Images/Maps/map-" + mapID + ".jpg";
+    document.getElementById("map-image").src = "./Assets/Images/Maps/map-" + mapID + ".jpg";
     document.getElementById("description").innerHTML = mapProperties.description;
     document.getElementById("location").innerHTML = mapProperties.location;
     document.getElementById("gamemode").innerHTML = mapProperties.gamemode.join(", ");
