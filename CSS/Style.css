@@ -247,6 +247,7 @@ textarea {
     border-radius: 4px;
     resize: vertical;
     color: black;
+    box-sizing: border-box;
 }
 
 label {
@@ -339,6 +340,10 @@ input[type=reset]:hover {
 
     .operator-card-slider-button {
         width: .8rem;
+    }
+
+    .col-label, label {
+      width: 100%;
     }
 
     .col-number,

@@ -83,6 +83,7 @@ nav ul li a {
     text-transform: none;
     text-decoration: none;
     display: block;
+    width: 100%;
 }
 
 .dropdown {
@@ -147,6 +148,7 @@ nav .right-button {
     letter-spacing: 0.1rem;
     padding: 0.5rem 1rem;
     border-radius: .5rem;
+    box-sizing: border-box;
 }
 
 .action-button a:hover {
@@ -166,13 +168,18 @@ nav .right-button {
         display: none;
     }
 
+    .action-button a {
+        padding: 1rem 3rem;
+        font-size: 1.2rem;
+    }
+
     nav {
         align-items: center;
         justify-content: space-around;
         border-bottom: 1px solid #555;
         font-size: 1rem;
     }
-    
+
     nav .logo {
         margin-left: 5rem;
     }
@@ -196,7 +203,7 @@ nav .right-button {
     .burger-menu-button {
         display: inline-block;
         transform: none;
-        padding: .8rem 1rem;
+        padding: 1rem;
         line-height: 1;
     }
 
@@ -237,7 +244,7 @@ nav .right-button {
 
     .dropdown > li > a {
         display: block;
-        padding: 0 2rem;
+        padding: 0 0;
     }
 
     .menu-item:not(.button-menu),
