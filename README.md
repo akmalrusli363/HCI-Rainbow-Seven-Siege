@@ -2,6 +2,8 @@
 
 ![Logo R7S](Info/logo.png)
 
+![GitHub deployments](https://img.shields.io/github/deployments/akmalrusli363/HCI-Rainbow-Seven-Siege/Github-Pages?label=GitHub%20Pages%20status)
+
 **Rainbow Seven** is a (web-based) game developed by **Ubipost**, recently they released the 51st and 52nd operator for their game. With the new upcoming updates on the game, the company also wanted to update their website.
 
 Your task is to **create a logo and a promotional website** that represent the new upcoming updates. You also need to consider the design for the website so the user **can pre-order and sneak peek about the new update** of the game.
