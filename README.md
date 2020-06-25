@@ -4,9 +4,15 @@
 
 ![GitHub deployments](https://img.shields.io/github/deployments/akmalrusli363/HCI-Rainbow-Seven-Siege/Github-Pages?label=GitHub%20Pages%20status)
 
+_**Rainbow Seven Siege** adalah project Human and Computer Interaction yang berisikan tentang pembuatan website game dari **Ubipost** berbasiskan HTML, JavaScript (Pure-JS dan JQuery), dan Pure-CSS._
+
 **Rainbow Seven** is a (web-based) game developed by **Ubipost**, recently they released the 51st and 52nd operator for their game. With the new upcoming updates on the game, the company also wanted to update their website.
 
 Your task is to **create a logo and a promotional website** that represent the new upcoming updates. You also need to consider the design for the website so the user **can pre-order and sneak peek about the new update** of the game.
+
+### Site Link
+
+Rainbow Seven Siege by Ubipost: [https://akmalrusli363.github.io/HCI-Rainbow-Seven-Siege/](https://akmalrusli363.github.io/HCI-Rainbow-Seven-Siege/)
 
 ## Requirements
 
@@ -82,7 +88,11 @@ The requirements for **Rainbow Seven Siege's website** are described as follow :
 
 ## Credit & references
 
-See [CREDITS.md](CREDITS.md).
+Inspirasi asli dari project Human & Computer Interaction:
+
+- **Tom Clancy's Rainbow Six Siege** - [Website](https://www.ubisoft.com/en-gb/game/rainbow-six/siege) / [Steam](https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/)
+
+For credits & references from our project built, please refer [CREDITS.md](CREDITS.md).
 
 ## Further notices
 
